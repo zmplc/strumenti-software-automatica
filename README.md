@@ -3,7 +3,7 @@ Repository contenente le esercitazioni del corso Strumenti Software per Automati
 
 ### Lezioni
 - Lezione 22/02 [x]
-- Lezione 24/02 []
+- Lezione 24/02 [x]
 - Lezione
 - Lezione
 - Lezione
