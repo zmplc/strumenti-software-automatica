@@ -18,9 +18,28 @@ A=
 -1 0 0
 0 0 -2
 Calcolare A', eig(A), A'A con due cicli for
-%}
 
+esempio for
 t=0:.1:5;x=sin(t);
 for i=1:20
     r(i)=sqrt(i);
+end
+%}
+
+clear;
+A=[0 1 0;-1 0 0;0 0 -2];
+lambda=eig(A);
+At=A';n=max(size(A));B=zeros(n);
+for i=1:n
+    for j=1:n
+        for k=1:n
+            B(i,j)=B(i,j)+At(i,k)*A(k,j);
+        end
+    end
+end
+%oppure posso farlo come segue
+for i=1:n
+    for j=1:n
+        C(i,j)=At(i,:)*A(:,j);
+    end
 end
